@@ -1,1 +1,3 @@
 ## Interface: 40200
+
+wow-gold.xml
