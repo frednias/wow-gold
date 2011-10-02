@@ -2,7 +2,29 @@
 
 <Script file="wow-gold.lua"/>
 
-<Frame name="WowGold">
+<Frame name="WowGold" frameStrata="MEDIUM" toplevel="true" parent="UIParent">
+	<Size>
+		<AbsDimension x="200" y="24"/>
+	</Size>
+	<Anchors>
+		<Anchor point="TOP LEFT"/>
+	</Anchors>
+	<Layers>
+		<Layer level="ARTWORK">
+			<FontString name="MiniWindowText" inherits="NumberFontNormalYellow" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="200" y="32"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset>
+							<AbsDimension x="-19.3" y="4.1"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</FontString>
+		</Layer>
+	</Layers>
 	<Scripts>
 		<OnLoad>
 			WowGold_OnLoad(self);
